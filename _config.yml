@@ -1,0 +1,79 @@
+# ------------------------------------------------------------------
+# Site settings. Edit these lines to change what appears everywhere.
+# ------------------------------------------------------------------
+title: Carson Ball
+first_name: Carson
+tagline: Embedded systems, FPGA, and hardware
+description: >-
+  Carson Ball is a Computer Systems Engineering student at the University of
+  Georgia who writes firmware, designs digital logic, and builds robots.
+email: cmb42038@uga.edu
+linkedin: https://www.linkedin.com/in/carsonmichaelball
+github: https://github.com/cmb42038
+resume_pdf: /assets/CarsonBall_Resume.pdf
+
+# Your photo (optional). To use one instead of the robot illustration, upload
+# a square photo to assets/img/carson.jpg and delete the # on the next line.
+# photo: /assets/img/carson.jpg
+
+# The "Currently" line in the intro cycles through these. Keep them true
+# and up to date; they're the most "right now" thing on the site.
+currently:
+  - writing the maze solver for UGA IEEE's Micromouse robot
+  - designing Verilog for a Basys 3 FPGA in Design of Digital Systems
+  - building and measuring op-amp circuits in Electronics I
+  - looking for a Summer 2027 embedded, firmware, or FPGA internship
+
+# Logos. Save the official logo files in assets/img/logos/ with these names.
+# Until you do, a plain text badge is shown instead.
+#   UGA:  https://brand.uga.edu  (logo downloads)
+#   IEEE: https://brand-experience.ieee.org  (IEEE master brand / student branch logos)
+affiliations:
+  - name: University of Georgia
+    detail: B.S. Computer Systems Engineering · May 2028
+    logo: /assets/img/logos/uga.png
+    badge: UGA
+    style: uga
+    link: https://engineering.uga.edu
+  - name: IEEE UGA Student Branch
+    detail: Micromouse competition team
+    logo: /assets/img/logos/ieee.png
+    badge: IEEE
+    style: ieee
+    link: https://ieee.uga.edu
+
+# Filter buttons above the projects, in this order. Each project picks
+# exactly one of these in its "category:" line.
+categories:
+  - Embedded & Robotics
+  - Hardware & FPGA
+  - Systems in C
+  - Algorithms & Java
+
+# ------------------------------------------------------------------
+# You normally don't need to touch anything below this line.
+# ------------------------------------------------------------------
+url: https://cmb42038.github.io
+baseurl: ""
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+
+exclude:
+  - templates
+  - ADDING_A_PROJECT.md
+  - PUBLISHING.md
+  - README.md

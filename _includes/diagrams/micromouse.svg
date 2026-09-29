@@ -1,0 +1,48 @@
+<svg viewBox="0 0 760 330" role="img" aria-labelledby="mm-title mm-desc">
+  <title id="mm-title">Micromouse system diagram</title>
+  <desc id="mm-desc">IR distance sensors connect to the STM32 over ADC and the IMU over I2C or SPI. The STM32 drives the motors with PWM and reads the wheel encoders with timers and interrupts. Firmware is debugged over SWD with an ST-Link and over UART.</desc>
+  <defs>
+    <marker id="mm-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path class="d-head" d="M0,0 L10,5 L0,10 z"/>
+    </marker>
+  </defs>
+
+  <!-- sensors -->
+  <rect class="d-box" x="20" y="40" width="160" height="56" rx="4"/>
+  <text class="d-text" x="100" y="64" text-anchor="middle">IR distance</text>
+  <text class="d-text" x="100" y="82" text-anchor="middle">sensors</text>
+  <rect class="d-box" x="20" y="150" width="160" height="56" rx="4"/>
+  <text class="d-text" x="100" y="183" text-anchor="middle">IMU</text>
+
+  <!-- MCU -->
+  <rect class="d-core" x="280" y="26" width="200" height="194" rx="6"/>
+  <text class="d-strong" x="380" y="58" text-anchor="middle">STM32</text>
+  <text class="d-small" x="380" y="76" text-anchor="middle">ARM Cortex-M</text>
+  <text class="d-text" x="380" y="118" text-anchor="middle">Flood-fill mapping</text>
+  <text class="d-text" x="380" y="142" text-anchor="middle">Weighted Dijkstra</text>
+  <text class="d-text" x="380" y="166" text-anchor="middle">PID motor control</text>
+  <text class="d-small" x="380" y="198" text-anchor="middle">bare-metal + RTOS, C/C++</text>
+
+  <!-- actuators -->
+  <rect class="d-box" x="580" y="40" width="160" height="56" rx="4"/>
+  <text class="d-text" x="660" y="64" text-anchor="middle">Motor driver</text>
+  <text class="d-text" x="660" y="82" text-anchor="middle">+ DC motors</text>
+  <rect class="d-box" x="580" y="150" width="160" height="56" rx="4"/>
+  <text class="d-text" x="660" y="174" text-anchor="middle">Wheel</text>
+  <text class="d-text" x="660" y="192" text-anchor="middle">encoders</text>
+
+  <!-- debug -->
+  <rect class="d-box" x="250" y="262" width="260" height="46" rx="4"/>
+  <text class="d-text" x="380" y="290" text-anchor="middle">Debug: SWD / ST-Link, UART</text>
+
+  <!-- wires -->
+  <path class="d-wire" d="M180,68 H278" marker-end="url(#mm-arrow)"/>
+  <text class="d-label" x="229" y="60" text-anchor="middle">ADC</text>
+  <path class="d-wire" d="M180,178 H278" marker-end="url(#mm-arrow)"/>
+  <text class="d-label" x="229" y="170" text-anchor="middle">I2C / SPI</text>
+  <path class="d-wire" d="M480,68 H578" marker-end="url(#mm-arrow)"/>
+  <text class="d-label" x="529" y="60" text-anchor="middle">PWM</text>
+  <path class="d-wire" d="M580,178 H482" marker-end="url(#mm-arrow)"/>
+  <text class="d-label" x="531" y="170" text-anchor="middle">timers / IRQ</text>
+  <path class="d-wire" d="M380,222 V260" marker-start="url(#mm-arrow)" marker-end="url(#mm-arrow)"/>
+</svg>

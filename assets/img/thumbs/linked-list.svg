@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+<defs><marker id="h" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#8b95a5"/></marker></defs>
+<rect x="40" y="150" width="96" height="64" rx="12" fill="none" stroke="#e0304f" stroke-width="5"/>
+<path d="M104 150 V214" stroke="#e0304f" stroke-width="3.5"/>
+<text x="72" y="192" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="26" font-weight="bold" fill="#e0304f">3</text>
+<circle cx="120" cy="182" r="5.5" fill="#e0304f"/>
+<path d="M120 182 H171" stroke="#8b95a5" stroke-width="4" marker-end="url(#h)"/>
+<rect x="175" y="150" width="96" height="64" rx="12" fill="none" stroke="#2c8fcc" stroke-width="5"/>
+<path d="M239 150 V214" stroke="#2c8fcc" stroke-width="3.5"/>
+<text x="207" y="192" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="26" font-weight="bold" fill="#2c8fcc">9</text>
+<circle cx="255" cy="182" r="5.5" fill="#2c8fcc"/>
+<path d="M255 182 H306" stroke="#8b95a5" stroke-width="4" marker-end="url(#h)"/>
+<rect x="310" y="150" width="96" height="64" rx="12" fill="none" stroke="#2c8fcc" stroke-width="5"/>
+<path d="M374 150 V214" stroke="#2c8fcc" stroke-width="3.5"/>
+<text x="342" y="192" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="26" font-weight="bold" fill="#2c8fcc">13</text>
+<circle cx="390" cy="182" r="5.5" fill="#2c8fcc"/>
+<path d="M390 182 H441" stroke="#8b95a5" stroke-width="4" marker-end="url(#h)"/>
+<rect x="445" y="150" width="96" height="64" rx="12" fill="none" stroke="#2c8fcc" stroke-width="5"/>
+<path d="M509 150 V214" stroke="#2c8fcc" stroke-width="3.5"/>
+<text x="477" y="192" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="26" font-weight="bold" fill="#2c8fcc">36</text>
+<circle cx="525" cy="182" r="5.5" fill="#2c8fcc"/>
+<path d="M525 182 H576" stroke="#8b95a5" stroke-width="4" marker-end="url(#h)"/>
+<text x="596" y="192" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="28" fill="#8b95a5">∅</text>
+<text x="40" y="128" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="22" fill="#e0304f">head</text>
+<text x="40" y="268" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="20" fill="#8b95a5">insert keeps order · no duplicates</text></svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360"><text x="60" y="152" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="22" fill="#8b95a5">file1</text>
+<rect x="150" y="110" width="44" height="60" rx="8" fill="none" fill-opacity="0" stroke="#8b95a5" stroke-width="2.5"/>
+<text x="172" y="152" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="30" font-weight="bold" fill="#2c8fcc">E</text>
+<rect x="200" y="110" width="44" height="60" rx="8" fill="none" fill-opacity="0" stroke="#8b95a5" stroke-width="2.5"/>
+<text x="222" y="152" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="30" font-weight="bold" fill="#2c8fcc">N</text>
+<rect x="250" y="110" width="44" height="60" rx="8" fill="none" fill-opacity="0" stroke="#8b95a5" stroke-width="2.5"/>
+<text x="272" y="152" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="30" font-weight="bold" fill="#2c8fcc">G</text>
+<rect x="300" y="110" width="44" height="60" rx="8" fill="none" fill-opacity="0" stroke="#8b95a5" stroke-width="2.5"/>
+<text x="322" y="152" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="30" font-weight="bold" fill="#2c8fcc">I</text>
+<rect x="350" y="110" width="44" height="60" rx="8" fill="none" fill-opacity="0" stroke="#8b95a5" stroke-width="2.5"/>
+<text x="372" y="152" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="30" font-weight="bold" fill="#2c8fcc">N</text>
+<rect x="400" y="110" width="44" height="60" rx="8" fill="none" fill-opacity="0" stroke="#8b95a5" stroke-width="2.5"/>
+<text x="422" y="152" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="30" font-weight="bold" fill="#2c8fcc">E</text>
+<rect x="450" y="110" width="44" height="60" rx="8" fill="#e0304f" fill-opacity="0.2" stroke="#e0304f" stroke-width="4"/>
+<text x="472" y="152" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="30" font-weight="bold" fill="#e0304f">E</text>
+<rect x="500" y="110" width="44" height="60" rx="8" fill="none" fill-opacity="0" stroke="#8b95a5" stroke-width="2.5"/>
+<text x="522" y="152" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="30" font-weight="bold" fill="#2c8fcc">R</text>
+<rect x="550" y="110" width="44" height="60" rx="8" fill="none" fill-opacity="0" stroke="#8b95a5" stroke-width="2.5"/>
+<text x="572" y="152" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="30" font-weight="bold" fill="#2c8fcc">S</text>
+<text x="60" y="272" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="22" fill="#8b95a5">file2</text>
+<rect x="150" y="230" width="44" height="60" rx="8" fill="none" fill-opacity="0" stroke="#8b95a5" stroke-width="2.5"/>
+<text x="172" y="272" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="30" font-weight="bold" fill="#e0304f">E</text>
+<rect x="200" y="230" width="44" height="60" rx="8" fill="none" fill-opacity="0" stroke="#8b95a5" stroke-width="2.5"/>
+<text x="222" y="272" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="30" font-weight="bold" fill="#e0304f">N</text>
+<rect x="250" y="230" width="44" height="60" rx="8" fill="none" fill-opacity="0" stroke="#8b95a5" stroke-width="2.5"/>
+<text x="272" y="272" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="30" font-weight="bold" fill="#e0304f">G</text>
+<rect x="300" y="230" width="44" height="60" rx="8" fill="none" fill-opacity="0" stroke="#8b95a5" stroke-width="2.5"/>
+<text x="322" y="272" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="30" font-weight="bold" fill="#e0304f">I</text>
+<rect x="350" y="230" width="44" height="60" rx="8" fill="none" fill-opacity="0" stroke="#8b95a5" stroke-width="2.5"/>
+<text x="372" y="272" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="30" font-weight="bold" fill="#e0304f">N</text>
+<rect x="400" y="230" width="44" height="60" rx="8" fill="none" fill-opacity="0" stroke="#8b95a5" stroke-width="2.5"/>
+<text x="422" y="272" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="30" font-weight="bold" fill="#e0304f">E</text>
+<rect x="450" y="230" width="44" height="60" rx="8" fill="#e0304f" fill-opacity="0.2" stroke="#e0304f" stroke-width="4"/>
+<text x="472" y="272" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="30" font-weight="bold" fill="#e0304f">A</text>
+<rect x="500" y="230" width="44" height="60" rx="8" fill="none" fill-opacity="0" stroke="#8b95a5" stroke-width="2.5"/>
+<text x="522" y="272" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="30" font-weight="bold" fill="#e0304f">R</text>
+<rect x="550" y="230" width="44" height="60" rx="8" fill="none" fill-opacity="0" stroke="#8b95a5" stroke-width="2.5"/>
+<text x="572" y="272" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="30" font-weight="bold" fill="#e0304f">S</text>
+<text x="150" y="325" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="22" fill="#8b95a5">open · read · write · close</text></svg>

@@ -1,0 +1,50 @@
+<svg class="mouse-art" viewBox="0 0 300 300" role="img" aria-label="Illustration of a Micromouse robot seen from above, with its IR sensors scanning ahead">
+  <defs>
+    <radialGradient id="beam" cx="50%" cy="100%" r="100%">
+      <stop offset="0%" stop-color="var(--beam)" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="var(--beam)" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- maze floor -->
+  <g class="m-floor">
+    <path d="M0 60H300M0 120H300M0 180H300M0 240H300M60 0V300M120 0V300M180 0V300M240 0V300"/>
+  </g>
+  <g class="m-walls">
+    <path d="M60 60H120M180 0V60M240 120V180M0 180H60M120 240H180M240 240V300M180 120H240"/>
+  </g>
+  <!-- the robot, gently driving in place -->
+  <g class="m-bot">
+    <!-- IR beams -->
+    <g class="m-beams">
+      <path class="beam b1" d="M122 96 L86 22 L112 16 Z" fill="url(#beam)"/>
+      <path class="beam b2" d="M140 88 L128 6 L150 4 Z" fill="url(#beam)"/>
+      <path class="beam b3" d="M160 88 L150 4 L172 6 Z" fill="url(#beam)"/>
+      <path class="beam b4" d="M178 96 L188 16 L214 22 Z" fill="url(#beam)"/>
+    </g>
+    <!-- wheels -->
+    <g class="m-wheel">
+      <rect x="84" y="150" width="22" height="58" rx="8"/>
+      <rect x="194" y="150" width="22" height="58" rx="8"/>
+    </g>
+    <g class="m-tread">
+      <path d="M86 160h18M86 172h18M86 184h18M86 196h18M196 160h18M196 172h18M196 184h18M196 196h18"/>
+    </g>
+    <!-- board -->
+    <path class="m-board" d="M150 86 C188 86 202 104 202 128 V214 C202 230 190 240 174 240 H126 C110 240 98 230 98 214 V128 C98 104 112 86 150 86 Z"/>
+    <!-- IR emitters -->
+    <g class="m-ir">
+      <circle cx="122" cy="100" r="6"/><circle cx="140" cy="93" r="6"/>
+      <circle cx="160" cy="93" r="6"/><circle cx="178" cy="100" r="6"/>
+    </g>
+    <!-- MCU -->
+    <rect class="m-chip" x="126" y="140" width="48" height="48" rx="5"/>
+    <g class="m-pins">
+      <path d="M132 136v4M140 136v4M148 136v4M156 136v4M164 136v4M132 188v4M140 188v4M148 188v4M156 188v4M164 188v4M122 146h4M122 154h4M122 162h4M122 170h4M122 178h4M174 146h4M174 154h4M174 162h4M174 170h4M174 178h4"/>
+    </g>
+    <text class="m-chip-label" x="150" y="168" text-anchor="middle">STM32</text>
+    <!-- status LED -->
+    <circle class="m-led" cx="150" cy="222" r="5"/>
+    <!-- traces -->
+    <path class="m-trace" d="M150 192V212M128 188L112 204V226M172 188L188 204V226M140 118V136M160 118V136"/>
+  </g>
+</svg>

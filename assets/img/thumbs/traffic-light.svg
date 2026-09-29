@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360"><rect x="120" y="40" width="120" height="280" rx="26" fill="none" stroke="#8b95a5" stroke-width="5"/>
+<circle cx="180" cy="95" r="32" fill="#e0304f" fill-opacity="0.9" stroke="#e0304f" stroke-width="4"/>
+<circle cx="180" cy="180" r="32" fill="#e0a030" fill-opacity="0.18" stroke="#e0a030" stroke-width="4"/>
+<circle cx="180" cy="265" r="32" fill="#3aa655" fill-opacity="0.18" stroke="#3aa655" stroke-width="4"/>
+<text x="330" y="80" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="24" font-weight="bold" fill="#8b95a5">A  B   out</text>
+<text x="330" y="125" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="24" fill="#2c8fcc">0  0</text>
+<circle cx="430" cy="117" r="10" fill="#e0304f"/>
+<text x="330" y="173" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="24" fill="#2c8fcc">0  1</text>
+<circle cx="430" cy="165" r="10" fill="#e0304f"/>
+<circle cx="458" cy="165" r="10" fill="#e0a030"/>
+<text x="330" y="221" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="24" fill="#2c8fcc">1  0</text>
+<circle cx="430" cy="213" r="10" fill="#3aa655"/>
+<text x="330" y="269" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="24" fill="#2c8fcc">1  1</text>
+<circle cx="430" cy="261" r="10" fill="#e0a030"/>
+<text x="330" y="325" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="20" fill="#8b95a5">G = A·B'</text></svg>

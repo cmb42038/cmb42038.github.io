@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360"><rect x="100" y="180" width="38" height="120" rx="6" fill="#2c8fcc" fill-opacity="0.75"/>
+<rect x="150" y="260" width="38" height="40" rx="6" fill="#2c8fcc" fill-opacity="0.75"/>
+<rect x="200" y="125" width="38" height="175" rx="6" fill="#2c8fcc" fill-opacity="0.75"/>
+<rect x="250" y="230" width="38" height="70" rx="6" fill="#e0304f" fill-opacity="0.9"/>
+<rect x="300" y="50" width="38" height="250" rx="6" fill="#e0304f" fill-opacity="0.9"/>
+<rect x="350" y="205" width="38" height="95" rx="6" fill="#2c8fcc" fill-opacity="0.75"/>
+<rect x="400" y="95" width="38" height="205" rx="6" fill="#2c8fcc" fill-opacity="0.75"/>
+<rect x="450" y="150" width="38" height="150" rx="6" fill="#2c8fcc" fill-opacity="0.75"/>
+<rect x="500" y="70" width="38" height="230" rx="6" fill="#2c8fcc" fill-opacity="0.75"/>
+<path d="M80 302 H560" stroke="#8b95a5" stroke-width="3"/>
+<path d="M253 36 q25 -26 50 0" fill="none" stroke="#e0304f" stroke-width="4"/>
+<text x="330" y="50" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="20" fill="#e0304f">compare++</text></svg>

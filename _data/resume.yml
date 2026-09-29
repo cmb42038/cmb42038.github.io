@@ -1,0 +1,87 @@
+# ------------------------------------------------------------------
+# Your resume as it appears on the website's Resume page.
+# Keep it in sync with your PDF (assets/CarsonBall_Resume.pdf).
+# Each "- " starts a new item. Keep the indentation exactly as shown.
+# ------------------------------------------------------------------
+
+education:
+  - school: University of Georgia
+    place: Athens, GA
+    degree: B.S. in Computer Systems Engineering · GPA 3.42/4.0
+    dates: Expected May 2028
+    coursework: Design of Digital Systems (Verilog/FPGA), Digital Logic Design, Electronics I, Circuit Analysis, Linear Systems, Systems Programming, Data Structures, Applied Linear Algebra
+
+skills:
+  - label: Languages
+    items: C, C++, Python, Verilog, MATLAB, Bash, Java, ARM assembly (basic)
+  - label: Embedded
+    items: STM32 (ARM Cortex-M), bare-metal & RTOS firmware, UART, SPI, I2C, PWM, ADC, interrupts, SWD/ST-Link, IMU, encoders, PID
+  - label: Hardware
+    items: Basys 3 FPGA, Vivado, op-amp/transistor circuits, oscilloscopes, Multisim
+  - label: Tools
+    items: Git, GitHub, Linux/Unix, GCC, GDB, Valgrind, POSIX threads, Make, Maven, LaTeX
+
+projects:
+  - name: IEEE Micromouse Robot
+    tech: C/C++, STM32 (ARM Cortex-M), bare-metal firmware
+    org: Embedded Systems Competition Team, IEEE UGA Student Branch
+    dates: Sep 2026 – Present
+    link: /projects/micromouse/
+    bullets:
+      - Develop bare-metal C/C++ firmware (with some ARM assembly) for an STM32 (ARM Cortex-M) microcontroller on an autonomous maze-solving robot.
+      - Own the team's flood-fill maze-solving algorithm and implement weighted Dijkstra path planning alongside PID motor control for fast, stable navigation.
+      - Integrate IR distance sensors, wheel encoders, and an IMU with the microcontroller for wall detection, odometry, and heading correction.
+      - Configure STM32 peripherals (PWM timers, ADC, I2C, SPI, UART, and timer interrupts) for motor drive and sensor acquisition.
+  - name: FPGA Digital Design Labs
+    tech: Verilog, Vivado, Basys 3 (Xilinx Artix-7)
+    org: CSEE 4270 – Design of Digital Systems
+    dates: Aug 2026 – Present
+    link: /projects/hex-7seg-decoder/
+    bullets:
+      - Designed a binary-to-hexadecimal 7-segment LED decoder in Verilog (RTL) and deployed it to a Basys 3 (Xilinx Artix-7) FPGA.
+      - Wrote Vivado testbenches to exhaustively simulate all input combinations and verify waveforms before synthesis.
+      - Edited XDC constraint files to map module I/O to Basys 3 switches and Pmod ports.
+  - name: Systems Programming Projects
+    tech: C/C++, Linux
+    org: CSCI 1730 – Systems Programming
+    dates: Jan 2026 – May 2026
+    link: /projects/multithreaded-diagonal-sums/
+    bullets:
+      - Built a multithreaded POSIX threads program to search grids up to 3,567 × 3,567, comparing 1–3 thread runtimes.
+      - Wrote a file-comparison tool with low-level Unix system calls, analyzing the speed of byte-by-byte vs. bulk reads.
+      - Compressed DNA sequences to 2 bits per base with bitwise operators, cutting storage by about 75% versus ASCII.
+
+work:
+  - org: University of Georgia Libraries
+    place: Athens, GA
+    role: Senior Security Assistant
+    dates: May 2025 – Present
+    bullets:
+      - Promoted from Security Assistant to Senior Security Assistant (Dec 2025) based on reliability and performance; train new staff on facility protocols, emergency procedures, and de-escalation.
+      - Monitor library facilities and resolve patron concerns, escalating issues to supervisors when necessary.
+  - org: Carrabba's Italian Grill
+    place: Athens, GA
+    role: Host
+    dates: Jul 2026 – Present
+    bullets:
+      - Coordinate seating and communicate with guests, servers, and management in a fast-paced team environment.
+  - org: Jersey Mike's Subs
+    place: Bethlehem, GA
+    role: Team Member
+    dates: Jun 2022 – May 2025
+    bullets:
+      - Delivered customer service in a high-volume, fast-paced team environment for three years.
+
+involvement:
+  - org: IEEE UGA Student Branch
+    role: Member
+    dates: Aug 2026 – Present
+    bullets:
+      - Selected for the branch's embedded systems competition team, one of several engineering project teams.
+      - Participate in technical meetings, workshops, and networking events with students and industry professionals.
+
+honors:
+  - name: Zell Miller Scholarship, State of Georgia
+    dates: Aug 2024 – Present
+  - name: Eagle Scout, Boy Scouts of America
+    dates: Apr 2021

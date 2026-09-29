@@ -1,0 +1,4 @@
+Put the official logo files here:
+  uga.png  - University of Georgia logo
+  ieee.png - IEEE logo
+See ADDING_A_PROJECT.md.

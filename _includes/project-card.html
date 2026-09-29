@@ -1,0 +1,18 @@
+{% assign p = include.project %}
+<article class="card{% if include.featured %} card-featured{% endif %}" data-category="{{ p.category }}">
+  <a class="card-link" href="{{ p.url | relative_url }}">
+    <div class="card-thumb{% if p.thumb %} has-img{% endif %}">
+      {% if p.thumb %}<img src="{{ p.thumb | relative_url }}" alt="">{% else %}<span class="thumb-code">{{ p.code }}</span>{% endif %}
+      {% if include.featured %}<span class="thumb-flag">Featured</span>{% endif %}
+    </div>
+    <div class="card-body">
+      <div class="card-meta"><span>{{ p.context }}</span><span>{{ p.date_label }}</span></div>
+      <h3 class="card-title">{{ p.title }}</h3>
+      <p class="card-summary">{{ p.summary }}</p>
+      <ul class="tags" aria-label="Skills">
+        {% for t in p.tags %}<li class="tag">{{ t }}</li>{% endfor %}
+      </ul>
+      <span class="card-more">Read more <span class="arrow" aria-hidden="true">→</span></span>
+    </div>
+  </a>
+</article>

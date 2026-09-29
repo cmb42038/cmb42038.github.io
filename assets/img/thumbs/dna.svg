@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-20 0 680 360"><rect x="90" y="60" width="80" height="80" rx="14" fill="none" stroke="#2c8fcc" stroke-width="5"/>
+<text x="130" y="115" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="44" font-weight="bold" fill="#2c8fcc">G</text>
+<path d="M130 150 V200" stroke="#8b95a5" stroke-width="4" stroke-dasharray="6 6"/>
+<rect x="210" y="60" width="80" height="80" rx="14" fill="none" stroke="#2c8fcc" stroke-width="5"/>
+<text x="250" y="115" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="44" font-weight="bold" fill="#2c8fcc">A</text>
+<path d="M250 150 V200" stroke="#8b95a5" stroke-width="4" stroke-dasharray="6 6"/>
+<rect x="330" y="60" width="80" height="80" rx="14" fill="none" stroke="#2c8fcc" stroke-width="5"/>
+<text x="370" y="115" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="44" font-weight="bold" fill="#2c8fcc">T</text>
+<path d="M370 150 V200" stroke="#8b95a5" stroke-width="4" stroke-dasharray="6 6"/>
+<rect x="450" y="60" width="80" height="80" rx="14" fill="none" stroke="#2c8fcc" stroke-width="5"/>
+<text x="490" y="115" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="44" font-weight="bold" fill="#2c8fcc">C</text>
+<path d="M490 150 V200" stroke="#8b95a5" stroke-width="4" stroke-dasharray="6 6"/>
+<rect x="90" y="210" width="440" height="90" rx="14" fill="none" stroke="#e0304f" stroke-width="5"/>
+<text x="145" y="268" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="40" font-weight="bold" fill="#e0304f">11</text>
+<text x="255" y="268" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="40" font-weight="bold" fill="#e0304f">00</text>
+<path d="M200 222 V288" stroke="#e0304f" stroke-opacity=".35" stroke-width="3"/>
+<text x="365" y="268" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="40" font-weight="bold" fill="#e0304f">01</text>
+<path d="M310 222 V288" stroke="#e0304f" stroke-opacity=".35" stroke-width="3"/>
+<text x="475" y="268" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="40" font-weight="bold" fill="#e0304f">10</text>
+<path d="M420 222 V288" stroke="#e0304f" stroke-opacity=".35" stroke-width="3"/>
+<text x="548" y="264" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="22" fill="#8b95a5">1 byte</text></svg>

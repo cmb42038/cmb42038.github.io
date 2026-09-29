@@ -1,0 +1,130 @@
+---
+layout: default
+---
+{% assign projects = site.projects | sort: "sort_date" | reverse %}
+
+<section class="hero" id="top">
+  <canvas class="maze-bg" id="maze-bg" aria-hidden="true"></canvas>
+  <div class="hero-fade" aria-hidden="true"></div>
+  <div class="wrap hero-inner">
+    <div class="hero-text">
+      <p class="status-pill"><span class="pulse" aria-hidden="true"></span>Open to Summer 2027 internships</p>
+      <h1 class="hero-title">Hi, I'm <span class="hl">{{ site.first_name }}</span>.</h1>
+      <p class="hero-bio">Computer Systems Engineering student at the University of Georgia. I build firmware, FPGA designs, and robots, mostly at the point where code has to meet real hardware.</p>
+      <p class="now"><span class="now-label">Currently</span><span class="now-text"><span id="typed" data-lines="{{ site.currently | join: '|' }}">{{ site.currently | first }}</span><span class="caret" aria-hidden="true"></span></span></p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">See my projects <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="{{ '/resume/' | relative_url }}">View resume</a>
+        <button class="btn btn-ghost copy-email" type="button" data-email="{{ site.email }}"><span class="copy-label">Copy email</span></button>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <div class="avatar{% if site.photo %} has-photo{% endif %}">
+        {% if site.photo %}<img src="{{ site.photo | relative_url }}" alt="Carson Ball">{% else %}{% include avatar-mouse.svg %}{% endif %}
+      </div>
+      <span class="float-chip c1">STM32</span>
+      <span class="float-chip c2">Verilog</span>
+      <span class="float-chip c3">C / C++</span>
+    </div>
+  </div>
+  <button class="maze-note" id="maze-new" type="button" title="Generate a new maze">
+    <span class="dot" aria-hidden="true"></span><span class="note-long">Live flood-fill maze solver, the same algorithm I wrote for the Micromouse.</span> New maze ↻
+  </button>
+</section>
+
+<section class="section" id="about">
+  <div class="wrap about">
+    <div class="about-text">
+      <p class="kicker">About me</p>
+      <h2>A little about me.</h2>
+      <p>The work I enjoy most sits right where code meets hardware: getting a microcontroller's peripherals to cooperate, making a design pass simulation before it ever touches a board, and chasing the bug that only shows up on real hardware.</p>
+      <p>On UGA IEEE's Micromouse team, I own the maze-solving algorithm for an autonomous robot built around an STM32. Outside of class I'm a Senior Security Assistant at UGA Libraries, where I train new staff. I'm also a Zell Miller Scholar and an Eagle Scout.</p>
+    </div>
+    <div class="affiliations">
+      {% for a in site.affiliations %}
+      <a class="aff aff-{{ a.style }}" href="{{ a.link }}">
+        <span class="aff-logo">
+          <img src="{{ a.logo | relative_url }}" alt="{{ a.name }} logo" onerror="this.remove()">
+          <span class="aff-badge" aria-hidden="true">{{ a.badge }}</span>
+        </span>
+        <span class="aff-text"><strong>{{ a.name }}</strong><span>{{ a.detail }}</span></span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-tint" id="skills">
+  <div class="wrap">
+    <p class="kicker">What I do</p>
+    <h2 class="section-title">The kind of work I do.</h2>
+    <div class="skills">
+      <article class="skill">
+        <svg class="skill-icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="12" y="12" width="24" height="24" rx="3"/><rect x="19" y="19" width="10" height="10" rx="1.5"/><path d="M18 6v6M24 6v6M30 6v6M18 36v6M24 36v6M30 36v6M6 18h6M6 24h6M6 30h6M36 18h6M36 24h6M36 30h6"/></svg>
+        <h3>Embedded firmware</h3>
+        <p>Bare-metal and RTOS C/C++ on STM32: timers, PWM, ADC, and serial buses.</p>
+        <p class="skill-tools">UART · SPI · I2C · SWD</p>
+      </article>
+      <article class="skill">
+        <svg class="skill-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 34h8V14h8v20h8V14h8v20h4"/></svg>
+        <h3>FPGA &amp; digital design</h3>
+        <p>Verilog RTL, exhaustive testbenches, and bitstreams running on a Basys 3.</p>
+        <p class="skill-tools">Verilog · Vivado · Artix-7</p>
+      </article>
+      <article class="skill">
+        <svg class="skill-icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="9" width="36" height="30" rx="3"/><path d="M13 19l6 5-6 5M23 30h11"/></svg>
+        <h3>Systems programming</h3>
+        <p>C on Linux: threads, system calls, and memory I can account for down to the byte.</p>
+        <p class="skill-tools">POSIX · GDB · Valgrind</p>
+      </article>
+      <article class="skill">
+        <svg class="skill-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M4 24h8l4-10 6 20 6-20 6 20 4-10h6"/></svg>
+        <h3>Circuits &amp; hardware</h3>
+        <p>Op-amp and transistor circuits, built on the bench and checked on a scope.</p>
+        <p class="skill-tools">Oscilloscope · Multisim</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="projects">
+  <div class="wrap">
+    <div class="projects-head">
+      <div>
+        <p class="kicker">Projects</p>
+        <h2 class="section-title">Things I've built.</h2>
+      </div>
+      <div class="filters" id="filters" role="group" aria-label="Filter projects by area" data-order="{{ site.categories | join: '|' }}">
+        <button type="button" class="chip is-active" data-filter="all" aria-pressed="true">All <span class="count"></span></button>
+      </div>
+    </div>
+
+    <div class="grid" id="project-grid">
+      {% for p in projects %}{% if p.featured %}
+        {% include project-card.html project=p featured=true %}
+      {% endif %}{% endfor %}
+      {% for p in projects %}{% unless p.featured %}
+        {% include project-card.html project=p %}
+      {% endunless %}{% endfor %}
+    </div>
+    <p class="empty" id="empty-note" hidden>No projects with that tag yet.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="cta">
+      <div>
+        <h2>Let's build something.</h2>
+        <p>I'm looking for a Summer 2027 internship in embedded, firmware, FPGA, or hardware engineering. The fastest way to reach me is email.</p>
+      </div>
+      <div class="cta-actions">
+        <button class="btn btn-primary copy-email" type="button" data-email="{{ site.email }}"><span class="copy-label">{{ site.email }}</span></button>
+        <a class="btn btn-ghost" href="{{ site.linkedin }}">LinkedIn</a>
+        <a class="btn btn-ghost" href="{{ site.github }}">GitHub</a>
+        <a class="btn btn-ghost" href="{{ '/resume/' | relative_url }}">Resume</a>
+      </div>
+    </div>
+  </div>
+</section>

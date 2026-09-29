@@ -1,0 +1,78 @@
+---
+layout: default
+title: Resume
+permalink: /resume/
+summary: Carson Ball's resume. Computer Systems Engineering at the University of Georgia, seeking a Summer 2027 embedded, firmware, FPGA, or hardware internship.
+---
+{% assign r = site.data.resume %}
+<article class="wrap resume">
+  <header class="resume-head">
+    <div>
+      <p class="kicker">Resume</p>
+      <h1>Carson Ball</h1>
+      <p class="resume-sub">Seeking a Summer 2027 internship in embedded, firmware, FPGA, or hardware engineering</p>
+    </div>
+    <div class="resume-actions">
+      <a class="btn btn-primary" href="{{ site.resume_pdf | relative_url }}">Download PDF <span class="arrow" aria-hidden="true">↓</span></a>
+      <button class="btn btn-ghost copy-email" type="button" data-email="{{ site.email }}"><span class="copy-label">Copy email</span></button>
+    </div>
+  </header>
+
+  <section class="r-sec">
+    <h2>Education</h2>
+    {% for e in r.education %}
+    <div class="r-item">
+      <div class="r-row"><strong>{{ e.school }}</strong><span class="r-date">{{ e.dates }}</span></div>
+      <div class="r-row r-sub"><span>{{ e.degree }}</span><span>{{ e.place }}</span></div>
+      <p class="r-note"><strong>Relevant coursework:</strong> {{ e.coursework }}</p>
+    </div>
+    {% endfor %}
+  </section>
+
+  <section class="r-sec">
+    <h2>Technical skills</h2>
+    <dl class="r-skills">
+      {% for s in r.skills %}<div><dt>{{ s.label }}</dt><dd>{{ s.items }}</dd></div>{% endfor %}
+    </dl>
+  </section>
+
+  <section class="r-sec">
+    <h2>Projects</h2>
+    {% for p in r.projects %}
+    <div class="r-item">
+      <div class="r-row"><strong>{% if p.link %}<a href="{{ p.link | relative_url }}">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</strong><span class="r-date">{{ p.dates }}</span></div>
+      <div class="r-row r-sub"><span>{{ p.org }}</span><span class="r-tech">{{ p.tech }}</span></div>
+      <ul>{% for b in p.bullets %}<li>{{ b }}</li>{% endfor %}</ul>
+    </div>
+    {% endfor %}
+  </section>
+
+  <section class="r-sec">
+    <h2>Work experience</h2>
+    {% for w in r.work %}
+    <div class="r-item">
+      <div class="r-row"><strong>{{ w.org }}</strong><span class="r-date">{{ w.dates }}</span></div>
+      <div class="r-row r-sub"><span>{{ w.role }}</span><span>{{ w.place }}</span></div>
+      <ul>{% for b in w.bullets %}<li>{{ b }}</li>{% endfor %}</ul>
+    </div>
+    {% endfor %}
+  </section>
+
+  <section class="r-sec">
+    <h2>Campus &amp; community</h2>
+    {% for v in r.involvement %}
+    <div class="r-item">
+      <div class="r-row"><strong>{{ v.org }}</strong><span class="r-date">{{ v.dates }}</span></div>
+      <div class="r-row r-sub"><span>{{ v.role }}</span></div>
+      <ul>{% for b in v.bullets %}<li>{{ b }}</li>{% endfor %}</ul>
+    </div>
+    {% endfor %}
+  </section>
+
+  <section class="r-sec">
+    <h2>Honors &amp; awards</h2>
+    {% for h in r.honors %}
+    <div class="r-row r-honor"><strong>{{ h.name }}</strong><span class="r-date">{{ h.dates }}</span></div>
+    {% endfor %}
+  </section>
+</article>
