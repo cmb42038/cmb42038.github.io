@@ -25,20 +25,18 @@ work_lines:
   - systems programming in C.
   - analog and digital circuits.
 
-# Logos. These load from each organization's own site. If you'd rather host
-# them yourself, save the files in assets/img/logos/ and change the paths
-# (for example logo: /assets/img/logos/uga.png). If a logo can't load, a
-# plain text badge is shown instead.
+# Logos. "logo:" points to an image in assets/img/logos/. Without a logo
+# line (or if the image can't load), the colored text badge is shown.
 affiliations:
   - name: University of Georgia
     detail: B.S. Computer Systems Engineering · May 2028
-    logo: https://brand.uga.edu/wp-content/uploads/BrandSiteGraphics_Logo_Vertical-1.png
+    logo: /assets/img/logos/uga.png
     badge: UGA
     style: uga
     link: https://engineering.uga.edu
   - name: IEEE UGA Student Branch
     detail: Micromouse competition team
-    logo: https://ik.imagekit.io/f9q7dtbaq/assets_optimized/branding/UGAIEEE_Rectangular_BR.png
+    logo: /assets/img/logos/ieee.png
     badge: IEEE
     style: ieee
     link: https://www.ugaieee.com/

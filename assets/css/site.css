@@ -512,11 +512,14 @@ figcaption { font-size: var(--step--1); color: var(--muted); margin-top: 8px; }
 .typed-sizer > span { grid-area: 1 / 1; padding-right: 8px; }
 .hero-bio { margin: 16px 0 6px; }
 
-/* affiliation logos: official files are wide, so give them room */
-.aff { flex-direction: column; align-items: flex-start; gap: 14px; }
-.aff-logo {
-  width: auto; height: 60px; min-width: 64px; max-width: 100%; padding: 10px 14px;
-  background: #fff; border: 1px solid var(--line); border-radius: 12px;
-}
-.aff-logo img { position: static; inset: auto; display: block; height: 100%; width: auto; max-width: 240px; object-fit: contain; }
-.aff-logo:not(:has(img)) { width: 64px; padding: 0; }
+
+
+/* affiliation logos: square tiles; wide logos fit inside with space above and below */
+.aff-logo { width: 96px; height: 96px; border-radius: 16px; }
+.aff-logo img { inset: 7px; width: calc(100% - 14px); height: calc(100% - 14px); object-fit: contain; }
+@media (max-width: 480px) { .aff-logo { width: 80px; height: 80px; } }
+
+/* contact card: email on top, three equal buttons below, no orphans */
+.cta-actions { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; width: min(100%, 440px); max-width: none; justify-content: stretch; }
+.cta-actions .btn { justify-content: center; padding-inline: 12px; }
+.cta-actions .btn-primary { grid-column: 1 / -1; }
