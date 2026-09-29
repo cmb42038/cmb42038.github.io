@@ -17,6 +17,17 @@
     });
   }
 
+  /* ---------- CB logo: always back to the top of the home page ---------- */
+  var brand = document.getElementById("brand-home");
+  if (brand && document.getElementById("maze-bg")) {
+    // Already on the home page: scroll up instead of reloading.
+    brand.addEventListener("click", function (e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
+      if (history.replaceState) history.replaceState(null, "", location.pathname);
+    });
+  }
+
   /* ---------- typing intro ---------- */
   var typed = document.getElementById("typed");
   if (typed && !reduceMotion) {
@@ -155,9 +166,16 @@
       if (rx + DX[dd] < cols && ry + DY[dd] < rows) { walls[r] &= ~dd; walls[(ry + DY[dd]) * cols + rx + DX[dd]] &= ~OPP[dd]; }
     }
     // Goal near the top right, start near the bottom middle, so the run stays visible.
+    // A new goal every maze, somewhere in the visible right side (or anywhere
+    // on a phone), with the mouse starting far enough away to make a real run.
     var narrow = hero.clientWidth < 760;
-    goal = Math.floor(rows * (narrow ? 0.18 : 0.22)) * cols + Math.floor(cols * (narrow ? 0.82 : 0.9));
-    start = (rows - 2) * cols + Math.floor(cols * (narrow ? 0.12 : 0.52));
+    var rnd = function (a, b) { return a + Math.floor(Math.random() * (b - a + 1)); };
+    var gx = narrow ? rnd(1, cols - 2) : rnd(Math.floor(cols * 0.55), cols - 2);
+    var gy = rnd(1, rows - 2);
+    goal = gy * cols + gx;
+    var sx = narrow ? rnd(0, cols - 1) : rnd(Math.floor(cols * 0.5), cols - 1);
+    var sy = gy < rows / 2 ? rows - 1 : 0;
+    start = sy * cols + sx;
     // Flood fill: breadth-first distances from the goal.
     dist = new Array(n).fill(-1); dist[goal] = 0; order = [goal];
     for (var q = 0; q < order.length; q++) {

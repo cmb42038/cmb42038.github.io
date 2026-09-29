@@ -11,7 +11,7 @@ layout: default
       <p class="status-pill"><span class="pulse" aria-hidden="true"></span>Open to Summer 2027 internships</p>
       <h1 class="hero-title">Hi, I'm <span class="hl">{{ site.first_name }}</span>.</h1>
       <p class="hero-bio">Computer Systems Engineering student at the University of Georgia. I build firmware, FPGA designs, and robots, mostly at the point where code has to meet real hardware.</p>
-      <p class="now"><span class="now-label">Currently</span><span class="now-text"><span id="typed" data-lines="{{ site.currently | join: '|' }}">{{ site.currently | first }}</span><span class="caret" aria-hidden="true"></span></span></p>
+      <p class="hero-typed"><span class="typed-sizer" aria-hidden="true">{% for l in site.work_lines %}<span>I work on {{ l }}</span>{% endfor %}</span><span class="typed-live">I work on <span id="typed" data-lines="{{ site.work_lines | join: '|' }}">{{ site.work_lines | first }}</span><span class="caret" aria-hidden="true"></span></span></p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#projects">See my projects <span class="arrow" aria-hidden="true">→</span></a>
         <a class="btn btn-ghost" href="{{ '/resume/' | relative_url }}">View resume</a>
@@ -29,7 +29,7 @@ layout: default
     </div>
   </div>
   <button class="maze-note" id="maze-new" type="button" title="Generate a new maze">
-    <span class="dot" aria-hidden="true"></span><span class="note-long">Live flood-fill maze solver, the same algorithm I wrote for the Micromouse.</span> New maze ↻
+    <span class="dot" aria-hidden="true"></span><span class="note-long">Live flood-fill maze solver, the same algorithm I work on for the Micromouse.</span> New maze ↻
   </button>
 </section>
 
@@ -39,7 +39,7 @@ layout: default
       <p class="kicker">About me</p>
       <h2>A little about me.</h2>
       <p>The work I enjoy most sits right where code meets hardware: getting a microcontroller's peripherals to cooperate, making a design pass simulation before it ever touches a board, and chasing the bug that only shows up on real hardware.</p>
-      <p>On UGA IEEE's Micromouse team, I own the maze-solving algorithm for an autonomous robot built around an STM32. Outside of class I'm a Senior Security Assistant at UGA Libraries, where I train new staff. I'm also a Zell Miller Scholar and an Eagle Scout.</p>
+      <p>On UGA IEEE's Micromouse team, I work on the firmware and maze-solving algorithms for an autonomous robot built around an STM32. Outside of class I'm a Senior Student Assistant at UGA Libraries and a host at Carrabba's. I'm also a Zell Miller Scholar and an Eagle Scout.</p>
     </div>
     <div class="affiliations">
       {% for a in site.affiliations %}

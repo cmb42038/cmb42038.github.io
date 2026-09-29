@@ -16,31 +16,32 @@ resume_pdf: /assets/CarsonBall_Resume.pdf
 # a square photo to assets/img/carson.jpg and delete the # on the next line.
 # photo: /assets/img/carson.jpg
 
-# The "Currently" line in the intro cycles through these. Keep them true
-# and up to date; they're the most "right now" thing on the site.
-currently:
-  - writing the maze solver for UGA IEEE's Micromouse robot
-  - designing Verilog for a Basys 3 FPGA in Design of Digital Systems
-  - building and measuring op-amp circuits in Electronics I
-  - looking for a Summer 2027 embedded, firmware, or FPGA internship
+# The "I work on ..." line in the intro types out these, one after another.
+# Keep them broad so they stay true without constant updates.
+work_lines:
+  - embedded firmware for microcontrollers.
+  - digital logic and FPGA design.
+  - autonomous robots and path planning.
+  - systems programming in C.
+  - analog and digital circuits.
 
-# Logos. Save the official logo files in assets/img/logos/ with these names.
-# Until you do, a plain text badge is shown instead.
-#   UGA:  https://brand.uga.edu  (logo downloads)
-#   IEEE: https://brand-experience.ieee.org  (IEEE master brand / student branch logos)
+# Logos. These load from each organization's own site. If you'd rather host
+# them yourself, save the files in assets/img/logos/ and change the paths
+# (for example logo: /assets/img/logos/uga.png). If a logo can't load, a
+# plain text badge is shown instead.
 affiliations:
   - name: University of Georgia
     detail: B.S. Computer Systems Engineering · May 2028
-    logo: /assets/img/logos/uga.png
+    logo: https://brand.uga.edu/wp-content/uploads/UGA_logo_ExtremeHoriz_FC_MARCM-1024x158.png
     badge: UGA
     style: uga
     link: https://engineering.uga.edu
   - name: IEEE UGA Student Branch
     detail: Micromouse competition team
-    logo: /assets/img/logos/ieee.png
+    logo: https://ik.imagekit.io/f9q7dtbaq/assets_optimized/branding/UGAIEEE_Rectangular_BR.png
     badge: IEEE
     style: ieee
-    link: https://ieee.uga.edu
+    link: https://www.ugaieee.com/
 
 # Filter buttons above the projects, in this order. Each project picks
 # exactly one of these in its "category:" line.

@@ -7,7 +7,7 @@ context: IEEE UGA · Micromouse team
 date_label: Sep 2026 – Present
 sort_date: 2026-09-01
 featured: true
-team: Competition team; I own the maze-solving algorithm
+team: IEEE UGA competition team
 tools: STM32, C/C++, ARM assembly, ST-Link
 category: Embedded & Robotics
 tags: [Embedded C/C++, STM32, Robotics, Path planning, PID]
@@ -19,7 +19,7 @@ A Micromouse is a small autonomous robot that starts in the corner of an unfamil
 
 ## My role
 
-- I own the team's **flood-fill maze-solving algorithm**, which keeps a distance-to-goal value for every cell and updates it each time the robot discovers a new wall.
+- I work on the **flood-fill maze-solving algorithm**, which keeps a distance-to-goal value for every cell and updates it each time the robot discovers a new wall.
 - I implement **weighted Dijkstra path planning** so the fast run favors long straightaways over routes with many turns, not just the fewest cells.
 - I write **bare-metal and RTOS-based C/C++ firmware** (with some ARM assembly) for the robot's STM32 microcontroller.
 - I configure the STM32's peripherals: **PWM timers** for motor drive, the **ADC** for the IR distance sensors, **I2C/SPI** for the IMU, **UART** for telemetry, and **timer interrupts** for encoder counting and control-loop timing.

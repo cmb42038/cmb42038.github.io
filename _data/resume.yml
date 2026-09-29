@@ -7,81 +7,73 @@
 education:
   - school: University of Georgia
     place: Athens, GA
-    degree: B.S. in Computer Systems Engineering · GPA 3.42/4.0
+    degree: Bachelor of Science in Computer Systems Engineering · GPA 3.42/4.0
     dates: Expected May 2028
     coursework: Design of Digital Systems (Verilog/FPGA), Digital Logic Design, Electronics I, Circuit Analysis, Linear Systems, Systems Programming, Data Structures, Applied Linear Algebra
 
 skills:
   - label: Languages
-    items: C, C++, Python, Verilog, MATLAB, Bash, Java, ARM assembly (basic)
-  - label: Embedded
-    items: STM32 (ARM Cortex-M), bare-metal & RTOS firmware, UART, SPI, I2C, PWM, ADC, interrupts, SWD/ST-Link, IMU, encoders, PID
-  - label: Hardware
-    items: Basys 3 FPGA, Vivado, op-amp/transistor circuits, oscilloscopes, Multisim
+    items: C, C++, Verilog, Java, Python, MATLAB, Bash, Assembly (basic)
+  - label: Embedded & Hardware
+    items: STM32, bare-metal firmware, Basys 3 FPGA, Vivado, op-amp/transistor circuits, oscilloscopes
   - label: Tools
-    items: Git, GitHub, Linux/Unix, GCC, GDB, Valgrind, POSIX threads, Make, Maven, LaTeX
+    items: Git, GitHub, Linux/Unix, GCC, GDB, Valgrind, POSIX threads, Make, Maven
 
 projects:
   - name: IEEE Micromouse Robot
-    tech: C/C++, STM32 (ARM Cortex-M), bare-metal firmware
+    tech: C/C++, STM32
     org: Embedded Systems Competition Team, IEEE UGA Student Branch
-    dates: Sep 2026 – Present
+    dates: September 2026 – Present
     link: /projects/micromouse/
     bullets:
-      - Develop bare-metal C/C++ firmware (with some ARM assembly) for an STM32 (ARM Cortex-M) microcontroller on an autonomous maze-solving robot.
-      - Own the team's flood-fill maze-solving algorithm and implement weighted Dijkstra path planning alongside PID motor control for fast, stable navigation.
-      - Integrate IR distance sensors, wheel encoders, and an IMU with the microcontroller for wall detection, odometry, and heading correction.
-      - Configure STM32 peripherals (PWM timers, ADC, I2C, SPI, UART, and timer interrupts) for motor drive and sensor acquisition.
+      - Developing bare-metal C/C++ firmware (with some assembly) on an STM32 for an autonomous maze-solving robot.
+      - Implementing flood-fill and weighted Dijkstra path planning alongside PID motor control for fast, stable navigation.
+      - Integrating IR distance sensors, wheel encoders, and an IMU for wall detection, odometry, and heading correction.
   - name: FPGA Digital Design Labs
-    tech: Verilog, Vivado, Basys 3 (Xilinx Artix-7)
+    tech: Verilog, Vivado
     org: CSEE 4270 – Design of Digital Systems
-    dates: Aug 2026 – Present
+    dates: August 2026 – Present
     link: /projects/hex-7seg-decoder/
     bullets:
-      - Designed a binary-to-hexadecimal 7-segment LED decoder in Verilog (RTL) and deployed it to a Basys 3 (Xilinx Artix-7) FPGA.
-      - Wrote Vivado testbenches to exhaustively simulate all input combinations and verify waveforms before synthesis.
-      - Edited XDC constraint files to map module I/O to Basys 3 switches and Pmod ports.
+      - Designed a binary-to-hexadecimal 7-segment LED decoder in Verilog and deployed it to a Basys 3 FPGA board.
+      - Wrote testbenches in Vivado to exhaustively simulate all input combinations and verify waveforms before synthesis.
+      - Edited Basys 3 constraint files to map module I/O to board switches and Pmod ports.
   - name: Systems Programming Projects
     tech: C/C++, Linux
     org: CSCI 1730 – Systems Programming
-    dates: Jan 2026 – May 2026
+    dates: January – May 2026
     link: /projects/multithreaded-diagonal-sums/
     bullets:
-      - Built a multithreaded POSIX threads program to search grids up to 3,567 × 3,567, comparing 1–3 thread runtimes.
+      - Built a multithreaded POSIX threads program to search grids up to 3,567 x 3,567, comparing 1–3 thread runtimes.
       - Wrote a file-comparison tool with low-level Unix system calls, analyzing the speed of byte-by-byte vs. bulk reads.
       - Compressed DNA sequences to 2 bits per base with bitwise operators, cutting storage by about 75% versus ASCII.
+      - Managed dynamic memory with malloc/free, checking for leaks with Valgrind and debugging with GDB.
 
 work:
   - org: University of Georgia Libraries
     place: Athens, GA
-    role: Senior Security Assistant
+    role: Senior Student Assistant
     dates: May 2025 – Present
     bullets:
-      - Promoted from Security Assistant to Senior Security Assistant (Dec 2025) based on reliability and performance; train new staff on facility protocols, emergency procedures, and de-escalation.
+      - Promoted from Student Assistant to Senior Student Assistant based on reliability and job performance.
       - Monitor library facilities and resolve patron concerns, escalating issues to supervisors when necessary.
   - org: Carrabba's Italian Grill
     place: Athens, GA
     role: Host
-    dates: Jul 2026 – Present
+    dates: July 2026 – Present
     bullets:
       - Coordinate seating and communicate with guests, servers, and management in a fast-paced team environment.
-  - org: Jersey Mike's Subs
-    place: Bethlehem, GA
-    role: Team Member
-    dates: Jun 2022 – May 2025
-    bullets:
-      - Delivered customer service in a high-volume, fast-paced team environment for three years.
 
 involvement:
   - org: IEEE UGA Student Branch
     role: Member
-    dates: Aug 2026 – Present
+    dates: August 2026 – Present
     bullets:
-      - Selected for the branch's embedded systems competition team, one of several engineering project teams.
       - Participate in technical meetings, workshops, and networking events with students and industry professionals.
+      - Selected for the branch's embedded systems competition team, one of several engineering project teams.
 
 honors:
   - name: Zell Miller Scholarship, State of Georgia
-    dates: Aug 2024 – Present
+    dates: August 2024 – Present
   - name: Eagle Scout, Boy Scouts of America
-    dates: Apr 2021
+    dates: April 2021
