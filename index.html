@@ -20,8 +20,8 @@ layout: default
     </div>
 
     <div class="hero-card">
-      <div class="avatar{% if site.photo %} has-photo{% endif %}">
-        {% if site.photo %}<img src="{{ site.photo | relative_url }}" alt="Carson Ball">{% else %}{% include avatar-mouse.svg %}{% endif %}
+      <div class="avatar{% if site.photo %} has-photo{% else %} has-chip{% endif %}">
+        {% if site.photo %}<img src="{{ site.photo | relative_url }}" alt="Carson Ball">{% else %}{% include avatar-chip.svg %}{% endif %}
       </div>
       <span class="float-chip c1">STM32</span>
       <span class="float-chip c2">Verilog</span>
