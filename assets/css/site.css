@@ -523,3 +523,33 @@ figcaption { font-size: var(--step--1); color: var(--muted); margin-top: 8px; }
 .cta-actions { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; width: min(100%, 440px); max-width: none; justify-content: stretch; }
 .cta-actions .btn { justify-content: center; padding-inline: 12px; }
 .cta-actions .btn-primary { grid-column: 1 / -1; }
+
+/* microchip avatar (replaces the robot in the hero circle).
+   To recolor it, change the four --ic-* values below. */
+.avatar.has-chip {
+  --ic-disc: var(--red);          /* the circle */
+  --ic-disc-2: #8e0a25;           /* darker edge of the circle */
+  --ic-trace: #ffe3e8;            /* traces and solder pads */
+  --ic-pulse: #ffffff;            /* signals moving along the traces */
+  background: radial-gradient(circle at 38% 30%, var(--ic-disc), var(--ic-disc-2) 115%);
+}
+:root[data-theme="dark"] .avatar.has-chip { --ic-disc: #b3173a; --ic-disc-2: #6a0c22; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .avatar.has-chip { --ic-disc: #b3173a; --ic-disc-2: #6a0c22; }
+}
+.ic-art { width: 100%; height: 100%; display: block; }
+.ic-art .ic-traces { fill: none; stroke: var(--ic-trace); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; opacity: .8; }
+.ic-art .ic-pads circle { fill: var(--ic-trace); }
+.ic-art .ic-pulses path { fill: none; stroke: var(--ic-pulse); stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 14 100; stroke-dashoffset: 14; animation: ic-pulse 3.2s linear infinite; }
+.ic-art .ic-shadow { fill: #1a0308; opacity: .28; }
+.ic-art .ic-leads { fill: none; stroke: #d5dae3; stroke-width: 2.4; stroke-linejoin: round; }
+.ic-art .ic-top { fill: #3a4252; }
+.ic-art .ic-side-l { fill: #1b2230; }
+.ic-art .ic-side-r { fill: #272e3c; }
+.ic-art .ic-bevel { fill: none; stroke: #566076; stroke-width: 1; }
+.ic-art .ic-dot { fill: #1b2230; }
+.ic-art .ic-label { fill: #c9ced8; font: 700 10.5px var(--font-mono); letter-spacing: .06em; }
+.ic-art .ic-label-sm { font-size: 6.5px; font-weight: 500; opacity: .7; }
+.hero-card:hover .ic-art .ic-pulses path { animation-duration: 1.4s; }
+@keyframes ic-pulse { to { stroke-dashoffset: -100; } }
+@media (prefers-reduced-motion: reduce) { .ic-art .ic-pulses path { animation: none; opacity: 0; } }
