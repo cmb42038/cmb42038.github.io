@@ -20,6 +20,18 @@ skills:
     items: Git, GitHub, Linux/Unix, GCC, GDB, Valgrind, POSIX threads, Make, Maven
 
 projects:
+  - name: RISC-V Processor (FPGA and ASIC)
+    tech: Verilog, C, Python, Verilator, Vivado, OpenLane
+    org: Personal project
+    dates: September 2026 – Present
+    link: /projects/riscv-cpu/
+    bullets:
+      - Designed a single-cycle RV32I CPU in Verilog from the ISA specification; executes all 37 base integer instructions.
+      - Built a self-checking Python and Verilator test flow that checks every assembly test against a reference simulator.
+      - Ran compiled C programs on a Basys 3 (Artix-7) FPGA with UART output, meeting timing through the full Vivado flow.
+      - Took the design from RTL to GDSII with the OpenLane ASIC flow (SkyWater 130 nm); closed timing, clean DRC/LVS.
+      - Submitted a UART core to Tiny Tapeout for fabrication on SkyWater 130 nm (silicon expected 2027).
+      - Extending the design to a 5-stage pipeline with forwarding and hazard detection (in progress).
   - name: IEEE Micromouse Robot
     tech: C/C++, STM32
     org: Embedded Systems Competition Team, IEEE UGA Student Branch
